@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -114,6 +116,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    overflow-x: hidden;
   }
   body {
     @apply bg-background text-foreground;

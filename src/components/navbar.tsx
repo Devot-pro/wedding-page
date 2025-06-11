@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <nav classNameName="bg-none border-gray-200 dark:bg-gray-900">
+        <nav className="bg-none border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <h1 className='text-[#354469] text-5xl font-(family-name:--font-dancing)'>A</h1>

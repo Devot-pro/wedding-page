@@ -1,6 +1,5 @@
 'use Client'
 import React from 'react';
-import Link from 'next/link'
 
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 

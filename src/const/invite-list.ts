@@ -148,7 +148,7 @@ export const INVITE_LIST: IInvited[]  = [
     },
     {
         urlCode: 'h3m2',
-        firstInvitedName: 'Adelson Agostinho',
+        firstInvitedName: 'Aparicio Neto',
         secondInvitedName: 'Acompanhante', 
     },
     {

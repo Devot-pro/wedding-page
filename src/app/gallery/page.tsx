@@ -8,7 +8,7 @@ export default function Gallery() {
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Local do Evento:
             </h5>
-            <div className="grid w-full max-w-124">
+            <div className="grid w-full max-w-80">
               <div className="relative">
                 <label htmlFor="npm-install" className="sr-only">
                   Label
@@ -17,7 +17,7 @@ export default function Gallery() {
                   id="npm-install"
                   type="text"
                   className="col-span-6 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-500 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-                  value="R. Humberto Pimentel Costa, 285 - Janga, Paulista - PE, 53437-820"
+                  value="Endereço do evento"
                   disabled
                   readOnly
                 />

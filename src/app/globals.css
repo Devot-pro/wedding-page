@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../../.flowbite-react/class-list.json";
 @import "tw-animate-css";
@@ -120,5 +121,27 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+
+.perspective {
+  perspective: 800px;
+}
+
+.rotate-x-animation {
+  animation: flipX 0.3s ease-in-out;
+}
+
+@keyframes flipX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateX(0deg);
   }
 }

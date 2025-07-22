@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Marcellus, Dancing_Script, Young_Serif } from "next/font/google";
+import { Marcellus, Dancing_Script, Young_Serif, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+
 
 const marcellus = Marcellus({
   weight: '400',
@@ -22,6 +23,12 @@ const youngSerif = Young_Serif({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  weight: '400',
+  variable: "--font-poppins",
+  subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
   title: "Álefe & Raissa",
@@ -36,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${marcellus.variable} ${dancingScript.variable} ${youngSerif.variable} antialiased`}
+        className={`${marcellus.variable} ${dancingScript.variable} ${youngSerif.variable} ${poppins.variable} antialiased`}
       >
         <Navbar />
         {children}

@@ -73,19 +73,18 @@ export default function Gallery() {
         <h1 className="text-2xl mb-4 text-black font-(family-name:--font-marcellus)">Galeria de Fotos</h1>
         <div
           className="
-            gallery
-            columns-1
-            sm:columns-2
-            md:columns-3
-            lg:columns-4
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
             gap-3
-            [column-fill:_balance]
           "
         >
           {galleryImages.map((img, idx) => (
             <figure
               key={idx}
-              className="mb-3 break-inside-avoid overflow-hidden rounded shadow group cursor-pointer relative"
+              className="break-inside-avoid overflow-hidden rounded shadow group cursor-pointer relative"
               onClick={() => setExpanded(idx)}
             >
               {!loadedImages.includes(idx) && (

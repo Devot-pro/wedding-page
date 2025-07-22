@@ -42,15 +42,15 @@ export default function Countdown({ to }: CountdownProps) {
   ];
 
   return (
-    <div className="flex gap-4 justify-center items-center font-mono text-white">
+    <div className="flex gap-2 md:gap-4 justify-center items-center font-mono text-white">
       {timeUnits.map(({ label, value }) => (
         <div key={label} className="flex flex-col items-center">
-          <div className="flex gap-1">
+          <div className="flex gap-0.5 md:gap-1">
             {value.split('').map((char, i) => (
               <FlipDigit key={i} digit={char} />
             ))}
           </div>
-          <span className="mt-2 text-sm uppercase tracking-wide text-gray-400">{label}</span>
+          <span className="mt-1 md:mt-2 text-xs md:text-sm uppercase tracking-wide text-gray-400">{label}</span>
         </div>
       ))}
     </div>

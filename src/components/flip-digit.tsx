@@ -24,7 +24,7 @@ export default function FlipDigit({ digit }: FlipDigitProps) {
   }, [digit, prevDigit]);
 
   return (
-    <div className="relative w-12 h-16 perspective">
+    <div className="relative w-8 h-12 perspective">
       <div
         className={clsx(
           'absolute inset-0 flex items-center justify-center text-3xl rounded-md border border-gray-700 bg-gray-900 text-white transition-transform duration-300 ease-in-out',
